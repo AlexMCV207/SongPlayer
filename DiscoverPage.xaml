@@ -1,12 +1,13 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MusicPlayer.MainPage"
-             BackgroundColor="CornflowerBlue">
+             x:Class="MusicPlayer.DiscoverPage"
+             Title="DiscoverPage"
+             Background="CornflowerBlue">
     <Grid>
         <ScrollView>
             <VerticalStackLayout Padding="15,15">
-                <Label Text="Recent playlists" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label Text="Playlists" TextColor="White" FontSize="18" FontAttributes="Bold"/>
                 <CollectionView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -22,7 +23,7 @@
                         </DataTemplate>
                     </CollectionView.ItemTemplate>
                 </CollectionView>
-                <Label Text="Recent songs" TextColor="White" FontSize="18" FontAttributes="Bold"/>
+                <Label Text="Songs" TextColor="White" FontSize="18" FontAttributes="Bold"/>
                 <CollectionView>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
@@ -40,12 +41,11 @@
                 </CollectionView>
             </VerticalStackLayout>
         </ScrollView>
-        <Button Text="+" TextColor="White" FontSize="65" Padding="0,-5,0,0" FontAttributes="Bold" WidthRequest="70" HeightRequest="70" HorizontalOptions="End" VerticalOptions="End" Margin="0,0,20,128" BackgroundColor="RoyalBlue"/>
         <Frame BorderColor="RoyalBlue" HeightRequest="130" BackgroundColor="RoyalBlue" CornerRadius="15" VerticalOptions="End" Margin="0,0,0,-10">
             <HorizontalStackLayout>
                 <VerticalStackLayout>
-                    <Label x:Name="SongCurrentName" Text="SongName" FontAttributes="Bold" FontSize="18"/>
-                    <Label x:Name="SongCurrentPerformer" Text="SongPerformer" FontSize="14"/>
+                    <Label x:Name="SongCurrentName" Text="aaaaa" FontAttributes="Bold" FontSize="18"/>
+                    <Label x:Name="SongCurrentPerformer" Text="bbbbb" FontSize="14"/>
                     <Label x:Name="SongCurrentTime" Text="0:00 / 0:00" FontAttributes="Bold" FontSize="18" Margin="5"/>
                     <ProgressBar x:Name="SongCurrentProgress" WidthRequest="260"/>
                 </VerticalStackLayout>
